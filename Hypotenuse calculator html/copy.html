@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .page-container {
+                background-color: rgb(255, 255, 255);
+                height: 1000px;
+                .calc1 {
+                    width: 60%;
+                    height: 15%;
+                    background-color: rgb(255, 255, 255);
+                    box-shadow: 2px 2px 2px 2px;
+                    border-radius: 5px;
+                    margin-left: 4%;
+                    display: flex;
+                    img {
+                        height: 95%;
+                        width: auto;
+                    }
+                    form {
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        input[type=number] {
+                            margin: 20px;
+                            width: 50%;
+                        }
+                        button {
+                            width: 30%;
+                            text-size-adjust:;
+                        }
+                    }
+                }
+            }
+        </style>
+        <script>
+            function Submit() {
+                const legaElement = document.getElementById("leg(a)");
+                const legbElement = document.getElementById("leg(b)");
+                const legaValue = legaElement.value;
+                const legbValue = legbElement.value;
+                const hypotenuse = document.getElementById("Hypotenuse");
+                const txtcontent = Math.trunc(Math.sqrt((legaValue*legaValue)+(legbValue*legbValue))*1000)/1000;
+                hypotenuse.textContent = txtcontent
+            }
+        </script>
+    </head>
+    <body class="page-container">
+        <div class="calc1">
+            <form>
+                <input type="number" id="leg(a)" placeholder="leg(a)" step=".01">
+                <input type="number" id="leg(b)" placeholder="leg(b)" step=".01">
+                <button onclick="Submit()" type="button">Calculate</button>
+                <p id="Hypotenuse">0</p>
+            </form>
+        </div>
+    </body>
+</html>
