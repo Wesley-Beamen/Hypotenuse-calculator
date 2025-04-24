@@ -1,0 +1,29 @@
+.page-container {
+    background-color: rgb(255, 255, 255);
+    height: 1000px;
+    .calc1 {
+        width: 60%;
+        height: 15%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 2px 2px 2px 2px;
+        border-radius: 5px;
+        margin-left: 4%;
+        display: flex;
+        img {
+            height: 95%;
+            width: auto;
+        }
+        form {
+            margin-top: auto;
+            margin-bottom: auto;
+            input[type=number] {
+                margin: 20px;
+                width: 50%;
+            }
+            button {
+                width: 30%;
+                text-size-adjust:;
+            }
+        }
+    }
+}
